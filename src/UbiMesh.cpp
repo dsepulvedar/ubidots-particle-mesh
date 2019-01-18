@@ -25,7 +25,7 @@ bool UbiMesh::ubiMeshPublish(const char * event_name, const char * variable_labe
     char * char_value = (char *) malloc(sizeof(char) * MAX_DATA_SIZE);
 
     sprintf(name, "%s/%s/%s", event_name, _default_device_label, variable_label);
-    sprintf(value, "%f", value);
+    sprintf(char_value, "%f", value);
 
     delay(500);
 
