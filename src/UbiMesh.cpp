@@ -22,7 +22,7 @@ UbiMesh::UbiMesh(const char * device_label){
 ***************************************************************************/
 bool UbiMesh::ubiMeshPublish(const char * event_name, const char * variable_label, float value){
     char * name = (char *) malloc(sizeof(char) * MAX_NAME_SIZE);
-    char * value = (char *) malloc(sizeof(char) * MAX_DATA_SIZE);
+    char * char_value = (char *) malloc(sizeof(char) * MAX_DATA_SIZE);
 
     sprintf(name, "%s/%s/%s", event_name, _default_device_label, variable_label);
     sprintf(value, "%f", value);
