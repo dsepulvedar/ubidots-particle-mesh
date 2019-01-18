@@ -14,7 +14,7 @@ UbiMesh::UbiMesh(){
 }
 
 UbiMesh::UbiMesh(const char * device_label){
-    _default_device_label = device_label;
+    _default_device_label = (char *) device_label;
 }
 
 /**************************************************************************
@@ -29,6 +29,6 @@ bool UbiMesh::ubiMeshPublish(const char * event_name, const char * variable_labe
 
     delay(500);
 
-    return Mesh.publish(name, value);
+    return Mesh.publish(name, char_value);
 
 }
