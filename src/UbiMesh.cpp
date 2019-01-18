@@ -27,6 +27,8 @@ bool UbiMesh::ubiMeshPublish(const char * event_name, const char * variable_labe
     sprintf(name, "%s/%s/%s", event_name, _default_device_label, variable_label);
     sprintf(value, "%f", value);
 
+    delay(500);
+
     return Mesh.publish(name, value);
 
 }
