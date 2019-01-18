@@ -14,7 +14,7 @@ UbiMesh::UbiMesh(){
 }
 
 UbiMesh::UbiMesh(const char * device_label){
-
+    _default_device_label = device_label;
 }
 
 /**************************************************************************
