@@ -8,7 +8,7 @@ class UbiMesh {
     public:
         explicit UbiMesh();
         explicit UbiMesh(const char * device_label);
-        bool UbiMesh::ubiMeshPublish(const char * event_name, const char * variable_label, float value);
+        bool ubiMeshPublish(const char * event_name, const char * variable_label, float value);
 
     private:
         char * _default_device_label;
